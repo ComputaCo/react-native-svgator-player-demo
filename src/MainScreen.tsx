@@ -5,6 +5,8 @@ import SVG from './svg/Shapes';
 import { Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Slider from '@react-native-community/slider';
+import LinearGradient from 'react-native-linear-gradient';
+
 
 const MainScreen = () => {
     const svgPlayerRef = useRef<SVGPlayer>(null);
@@ -122,6 +124,8 @@ const MainScreen = () => {
                     <Button
                         title="Loop"
                         onPress={onLoop}
+                        buttonStyle={{ ...styles.button, backgroundColor: colors.buttonBackgroundColor }}
+                        titleStyle={{ color: colors.textColor }}
                         icon={
                             <View style={{ paddingRight: 10 }}>
                                 <Icon name="repeat" size={15} color="white" />
@@ -131,6 +135,8 @@ const MainScreen = () => {
                     <Button
                         title="Dump Logs"
                         onPress={onDumpLogs}
+                        buttonStyle={{ ...styles.button, backgroundColor: colors.buttonBackgroundColor }}
+                        titleStyle={{ color: colors.textColor }}
                         icon={
                             <View style={{ paddingRight: 10 }}>
                                 <Icon name="bug" size={15} color="white" />
@@ -140,6 +146,8 @@ const MainScreen = () => {
                     <Button
                         title="Restart"
                         onPress={onRestart}
+                        buttonStyle={{ ...styles.button, backgroundColor: colors.buttonBackgroundColor }}
+                        titleStyle={{ color: colors.textColor }}
                         icon={
                             <View style={{ paddingRight: 10 }}>
                                 <Icon name="refresh" size={15} color="white" />
@@ -151,6 +159,8 @@ const MainScreen = () => {
                     <Button
                         title="Reverse"
                         onPress={onReverse}
+                        buttonStyle={{ ...styles.button, backgroundColor: colors.buttonBackgroundColor }}
+                        titleStyle={{ color: colors.textColor }}
                         icon={
                             <View style={{ paddingRight: 10 }}>
                                 <Icon name="undo" size={15} color="white" />
@@ -160,6 +170,8 @@ const MainScreen = () => {
                     <Button
                         title="Stop"
                         onPress={onStop}
+                        buttonStyle={{ ...styles.button, backgroundColor: colors.buttonBackgroundColor }}
+                        titleStyle={{ color: colors.textColor }}
                         icon={
                             <View style={{ paddingRight: 10 }}>
                                 <Icon name="stop" size={15} color="white" />
@@ -169,6 +181,8 @@ const MainScreen = () => {
                     <Button
                         title="SeekTo 500ms"
                         onPress={onSeekTo}
+                        buttonStyle={{ ...styles.button, backgroundColor: colors.buttonBackgroundColor }}
+                        titleStyle={{ color: colors.textColor }}
                         icon={
                             <View style={{ paddingRight: 10 }}>
                                 <Icon name="fast-forward" size={15} color="white" />
