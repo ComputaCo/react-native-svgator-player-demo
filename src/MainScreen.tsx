@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { SafeAreaView, StyleSheet, View, Appearance, useColorScheme } from 'react-native';
-import SVGPlayer from './react-native-svgator-player';
+import SVGPlayer from 'react-native-svgator-player';
 import SVG from './svg/Shapes';
 import { Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
